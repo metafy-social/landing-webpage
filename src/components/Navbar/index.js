@@ -1,14 +1,19 @@
 import React from "react";
+
 import { Nav, NavbarContainer, NavLogo, MobileIcon , NavMenu , NavItem , NavLinks, NavBtn , NavBtnLink} from "./NavbarElements";
 import {FaBars} from "react-icons/fa";
 import HP from "../../assets/homep.png";
 import CT from "../../assets/countdw.png";
 import LD from "../../assets/users.png";
 import LOGO from "../../assets/logo_metafy.png";
+import  Landing from "../Landing";
+import  Countdown from "../Countdown";
+import  Leaderboard from "../Leaderboard";
 
 const Navbar = ({toggle}) => {
   return (
     <>
+  
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
@@ -37,6 +42,7 @@ const Navbar = ({toggle}) => {
           </NavBtn>
         </NavbarContainer>
       </Nav>
+     
     </>
   );
 };

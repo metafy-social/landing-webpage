@@ -1,8 +1,20 @@
-import React, { useState } from "react";
+import React, { useState,useRef,useEffect } from "react";
 import Spline from "@splinetool/react-spline";
 import { LandingWrapper, Menu, Content } from "./LandingElements";
 import { HashLink as Link } from "react-router-hash-link";
 import Navbar from "../Navbar";
+import VanillaTilt from "vanilla-tilt";
+
+function Card(props) {
+  const { options, ...rest } = props;
+  const tilt = useRef(null);
+
+  useEffect(() => {
+    VanillaTilt.init(tilt.current, options);
+  }, [options]);
+
+  return <div ref={tilt} {...rest} />;
+}
 
 const Landing = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,19 +31,19 @@ const Landing = () => {
         <Navbar toggle={toggle} />
 
         <h1>
-          <span className="text">AT METAFY</span>
+          <span className="head">AT METAFY</span>
 
           <div class="message">
-            <div class="word1">WE BUILD</div>
-            <div class="word2">WE Connect</div>
+            <div class="word1">we build</div>
+            <div class="word2">we connect</div>
 
-            <div class="word3">WE Expand</div>
+            <div class="word3">we expand</div>
           </div>
         </h1>
-
-        <div className="typewriter">
-          <p className="line">
-            At Metafy we are building blockchain based solutions for real-world
+        <Card>
+        <div className="css-typing">
+          <p className="line" >
+            We are building blockchain based solutions for real-world
             problems and making the blockchain more easily accessible to the
             public. We are a team of developers, designers, and blockchain
             enthusiasts who are passionate about building a better future for
@@ -43,9 +55,12 @@ const Landing = () => {
             on our Discord server.
           </p>
         </div>
+        </Card>
       </Content>
     </LandingWrapper>
   );
 };
+
+
 
 export default Landing;
