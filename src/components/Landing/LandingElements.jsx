@@ -49,7 +49,7 @@ export const Content = styled.div`
     );
     border-radius: 20px;
     width: 650px;
-    height: 370px;
+    height: 420px;
     display: flex;
     margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);

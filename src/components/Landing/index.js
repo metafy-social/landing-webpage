@@ -1,9 +1,11 @@
 import React, { useState,useRef,useEffect } from "react";
 import Spline from "@splinetool/react-spline";
-import { LandingWrapper, Menu, Content } from "./LandingElements";
-import { HashLink as Link } from "react-router-hash-link";
+import { LandingWrapper,  Content } from "./LandingElements";
 import Navbar from "../Navbar";
 import VanillaTilt from "vanilla-tilt";
+import LKD from "../../assets/linkedin.png";
+import GH from "../../assets/github.png";
+import INS from "../../assets/instagram.png";
 
 function Card(props) {
   const { options, ...rest } = props;
@@ -54,6 +56,17 @@ const Landing = () => {
             world. If you are interested in joining us, please reach out to us
             on our Discord server.
           </p>
+          
+              <a href="https://github.com/metafy-social">       
+                <img className="logos" src={GH} alt="logo" />
+              </a>
+              <a href="https://www.linkedin.com/company/81321951/admin/">
+                <img className="logos" src={LKD} alt="logo" />
+              </a>
+              <a href="/">
+                <img className="logos" src={INS} alt="logo" />
+              </a>
+     
         </div>
         </Card>
       </Content>
