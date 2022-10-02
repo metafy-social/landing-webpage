@@ -100,7 +100,7 @@ export const Menu = styled.ul`
 `;
 
 export const Glass = styled.div`
-display: flex;
+  display: flex;
   justify-content: space-between;
   height: 500px;
   z-index: 1;
@@ -117,6 +117,6 @@ display: flex;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
-  margin: 80px 0 0 220px;
+  margin: 80px 0 0 240px;
 `
 

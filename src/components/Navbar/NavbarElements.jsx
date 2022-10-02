@@ -42,6 +42,7 @@ export const NavbarContainer = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
   margin-top: 20px;
+  margin-left:75px;
 `;
 
 export const NavLogo = styled(LinkR)`
