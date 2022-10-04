@@ -42,8 +42,9 @@ const Landing = () => {
             <div class="word3">we expand</div>
           </div>
         </h1>
-        <Card>
+        {/* <Card> */}
         <div className="css-typing">
+          <div className="text">
           <p className="line" >
             We are building blockchain based solutions for real-world
             problems and making the blockchain more easily accessible to the
@@ -55,9 +56,8 @@ const Landing = () => {
             passionate about blockchain and want to make a difference in the
             world. If you are interested in joining us, please reach out to us
             on our Discord server.
-          </p>
-          
-              <a href="https://github.com/metafy-social">       
+            <div className="sm">
+          <a href="https://github.com/metafy-social">       
                 <img className="logos" src={GH} alt="logo" />
               </a>
               <a href="https://www.linkedin.com/company/81321951/admin/">
@@ -66,9 +66,16 @@ const Landing = () => {
               <a href="/">
                 <img className="logos" src={INS} alt="logo" />
               </a>
+          </div>
+          </p>
+          
+          
+              
+          </div>
+         
      
         </div>
-        </Card>
+        {/* </Card> */}
       </Content>
     </LandingWrapper>
   );

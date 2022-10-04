@@ -64,7 +64,7 @@ export const Content = styled.div`
     font-size: 1.75rem;
   }
   p {
-    margin: 50px 30px 0 800px;
+    margin: 50px 30px 0 680px;
     width:680px;
     padding:20px ;
   }
