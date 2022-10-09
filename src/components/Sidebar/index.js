@@ -1,9 +1,12 @@
 import React from 'react';
+import Spline from "@splinetool/react-spline";
 import { SidebarContainer, Icon, CloseIcon ,SidebarLink,SidebarMenu,SidebarWrapper,SideBtnWrap,SidebarRoute } from './SidebarElements';
 
 const Sidebar = ({isOpen,toggle}) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
+         
+
         <Icon onclick={toggle}>
             <CloseIcon />
         </Icon>

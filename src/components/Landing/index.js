@@ -33,7 +33,9 @@ const Landing = () => {
         <Navbar toggle={toggle} />
 
         <h1>
-          <span className="head">AT METAFY</span>
+          <span className="head">
+            AT METAFY
+            </span>
 
           <div class="message">
             <div class="word1">we build</div>

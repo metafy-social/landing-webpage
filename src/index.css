@@ -183,6 +183,16 @@ h1 {
   flex-direction: column;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
   border-radius: .1em;
+  background-color: #383838;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  height: 11rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
+
 }
 
 .top,
@@ -243,18 +253,13 @@ h1 {
 
 .container {
   display: flex;
-  gap: .5em;
-  justify-content: center;
   margin-top:20px;
-}
-
-.container-segment {
-  display: flex;
-  flex-direction: column;
-  gap: .5em;
+  justify-content: center;
   align-items: center;
-  margin-left:3rem;
-  
+  flex-direction:row;
+  gap:3rem;
+  margin-left: 90px;
+ 
 
 }
 
@@ -275,27 +280,11 @@ h1 {
   border-radius: inherit;
 }
 
-/* 
-* Prevents issues when the parent creates a 
-* stacking context. (For example, using the transform
-* property )
-*/
-.flip-card::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-  border-radius: inherit;
-}
       
 
 .segment {
   display: flex;
-  gap: .1em;
+  
 }
 
 .segment-title {
@@ -306,6 +295,8 @@ h1 {
   letter-spacing: 3px;
   margin-top:3rem;
   color:#F2F2F2;
+  text-align: center;
+  justify-content: center;
 }
 
 .body {

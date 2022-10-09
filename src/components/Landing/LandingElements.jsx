@@ -8,6 +8,7 @@ display: flex;
 min-height:100%;
 position:fixed;
 overflow-y:scroll;
+scrollbar:hidden;
 overflow-x:hidden;
 
   @media (max-width: 1024px) {
@@ -35,6 +36,7 @@ export const Content = styled.div`
   top: 30px;
   flex-direction: column;
   gap: 70px;
+  scrollbar:hidden;
 
   @media (max-width: 1024px) {
     gap: 40px;

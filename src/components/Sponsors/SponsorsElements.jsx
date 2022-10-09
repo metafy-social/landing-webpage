@@ -42,12 +42,31 @@ export const Content = styled.div`
   p {
     line-height: 1.8;
     font-size: 1.05rem;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
     border-radius: 20px;
     width: 650px;
     height: 370px;
     display: flex;
     margin-top: 20px;
-   
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
+    backdrop-filter: blur(15px);
+  }
+
+  h1{
+    margin: 70px 30px 0 800px;
+    font-size: 1.75rem;
+  }
+  p {
+    margin: 50px 30px 0 800px;
+    width:680px;
+    padding:20px ;
   }
 `;
 

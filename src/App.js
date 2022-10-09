@@ -4,12 +4,13 @@ import Landing from "./components/Landing";
 import Leaderboard from "./components/Leaderboard";
 import Countdown from "./components/Countdown";
 import SignUp from "./components/SignUp";
-import { BrowserRouter } from "react-router-dom";
+import { QueryClientProvider, QueryClient } from "react-query";
 import { CookiesProvider } from "react-cookie";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+const queryClient = new QueryClient();
+
+const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -17,8 +18,8 @@ function App() {
   };
   return (
     <div className="App">
-      <CookiesProvider>
-        
+      <QueryClientProvider client={queryClient}>
+        <CookiesProvider>
           <Router>
             <Routes>
               <Route path="/" element={<Landing />} />
@@ -28,12 +29,8 @@ function App() {
             </Routes>
             <Sidebar isOpen={isOpen} toggle={toggle} />
           </Router>
-        
-      </CookiesProvider>
-
-      {/* <Route exact path="/" component={Home} />
-       <Route exact path="/leaderboard" component={Leaderboard} />
-       <Route exact path="/countdown" component={Countdown} /> */}
+        </CookiesProvider>
+      </QueryClientProvider>
     </div>
   );
 }

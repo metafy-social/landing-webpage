@@ -35,6 +35,9 @@ export const Content = styled.div`
   top: 30px;
   flex-direction: column;
   gap: 70px;
+  overflow: hidden;
+  
+
 
   @media (max-width: 1024px) {
     gap: 40px;
@@ -72,29 +75,35 @@ export const Content = styled.div`
 
 export const Menu = styled.ul`
   display: flex;
-  gap: 100px;
-  align-items: center;
   padding: 0;
-  margin: 0 30px 0 100px;
+  overflow-y: hidden;
+  overflow:auto;
   font-size: 1rem;
   flex-direction: row;
-
-  li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: 50px;
-  }
-  a {
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 14px;
-
-    // &:hover {
-    //   border: 1px solid rgba(255, 255, 255, 0.5);
-    // }
-  }
+  
+  // overflow-y: scroll;
+  padding: 20px 0 0 50px;
+  
+ 
 `;
+
+export const Glass = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+  z-index: 1;
+  width:100wh;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
+  margin: 80px 0 0 170px;
+`
+
