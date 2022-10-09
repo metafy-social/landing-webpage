@@ -424,3 +424,12 @@ h1 {
   color: #ffffff;
 
 }
+
+.link{
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 0.85rem;
+}
+.heading{
+  color: #ffffff;
+}
