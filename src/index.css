@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 *{
   box-sizing: border-box;
@@ -19,9 +20,53 @@ body {
 .head{
  
   font-family: "Zen Dots", cursive;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 0.3rem;
+ 
+  
+}
+
+.head2{
+ 
+  font-family: "Zen Dots", cursive;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 0.3rem;
+  margin-right:14rem;
+
+  @media (max-width: 1024px) {
+   
+  }
+  @media (max-width: 800px) {
+    margin-right: 0rem;
+  }
+  @media (max-width: 600px) {
+    margin-right: 0rem;
+  }
+  @media (max-width: 375px) {
+    margin-right: 0rem;
+
+  }
+ 
+  
+}
+
+.header{
+  font-family: "Zen Dots", cursive;
   letter-spacing: 3px;
   text-transform: uppercase;
-  
+  font-size: 1.5rem;
+  color: #f4d504;
+  margin-top: 3.5rem;
+  gap:2px;
+  margin-left: 35rem;
+  margin-bottom:2rem;
+
 }
 
 
@@ -69,9 +114,23 @@ h1 {
   flex-direction: column;
   padding-left: 0.5rem;
   margin-left: 1rem;
-  top: 0.2rem;
-  left: 260px;
+  left:20rem;
+
   animation: openclose 8s ease-in-out infinite;
+
+  @media (max-width: 1024px) {
+    margin-right: 0rem;
+  }
+  @media (max-width: 800px) {
+    margin-right: 0rem;
+  }
+  @media (max-width: 600px) {
+    left:0rem;
+  }
+  @media (max-width: 375px) {
+    left:0rem;
+
+  }
 }
 
 .word1, .word2, .word3 {
@@ -173,16 +232,29 @@ h1 {
     color: #f4d504;
     font-family: "Courier New", Courier, monospace;
     font-size: 7rem;
+
+    @media (max-width: 1024px) {
+      font-size: 7rem;
+    }
+    @media (max-width: 800px) {
+      font-size: 5rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 4rem;
+    }
+    @media (max-width: 375px) {
+      font-size: 4rem;
+  
+    }
     
    
 }
 
 .flip-card {
-  position: relative;
+  
   display: inline-flex;
-  flex-direction: column;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
-  border-radius: .1em;
+  border-radius: 0.1em;
   background-color: #383838;
   margin-top: 20px;
   text-align: center;
@@ -193,91 +265,48 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
 
-}
+  @media (max-width: 800px) {
+    width: 40rem;
+    height: 11rem;
+  }
+  @media (max-width: 600px) {
+    display:block;
+    width: 1rem;
+  height: 1rem;
 
-.top,
-.bottom,
-.flip-card .top-flip,
-.flip-card .bottom-flip {
-  height: .75em;
-  line-height: 1;
-  padding: .25em;
-  overflow: hidden;
-  
-}
+    
+  }
+  @media (max-width: 375px) {
+    width: 40rem;
+    height: 11rem;
 
-.top,
-.flip-card .top-flip {
-  background-color: white;
-  border-top-right-radius: .1em;
-  border-top-left-radius: .1em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.bottom,
-.flip-card .bottom-flip {
-  background-color: white;
-  display: flex;
-  align-items: flex-end;
-  border-bottom-right-radius: .1em;
-  border-bottom-left-radius: .1em;
-}
-
-.flip-card .top-flip {
-  position: absolute;
-  width: 100%;
-  animation: flip-top 250ms ease-in;
-  transform-origin: bottom;
-}
-
-@keyframes flip-top {
-  100% {
-    transform: rotateX(90deg);
   }
 }
-
-.flip-card .bottom-flip {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  animation: flip-bottom 250ms ease-out 250ms;
-  transform-origin: top;
-  transform: rotateX(90deg);
-}
-
-@keyframes flip-bottom {
-  100% {
-    transform: rotateX(0deg);
-  }
-}
-
 .container {
   display: flex;
-  margin-top:20px;
+  margin-top:4rem;
   justify-content: center;
   align-items: center;
   flex-direction:row;
   gap:3rem;
-  margin-left: 90px;
+  margin-left: 6rem;
  
+  @media (max-width: 1500px) {
+    
+  }
+  @media (max-width: 800px) {
+    margin-right: 0rem;
+  }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  @media (max-width: 375px) {
+    left:0rem;
 
-}
+  }
 
-
-.flip-card:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(-31deg, #181818  100% );
-  transform: translate3d(-9px, 8px, 0) scale(1.08);
-  filter: blur(36px);
-  opacity: var(0.7);
-  transition: opacity 0.3s;
-  border-radius: inherit;
 }
 
       
@@ -297,20 +326,44 @@ h1 {
   color:#F2F2F2;
   text-align: center;
   justify-content: center;
-}
 
-.body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 800px) {
+    margin-right: 0rem;
+    font-size: 1rem;
+  }
+  @media (max-width: 600px) {
+    margin-left: 0px;
+    flex-direction:column;
+    font-size: 0.2rem;
+    width: 100%;
+  }
+  @media (max-width: 375px) {
+    left:0rem;
+
+  }
 }
 
 .sm{
-  margin:0 0 0 225px;
+  margin:0 0 2rem 0;
+  display:inline-flex;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    margin:0 0 2px 0 0px;
+  }
+  @media (max-width: 800px) {
+    margin:0 0 0 0px;
+  }
+  @media (max-width: 600px) {
+    margin:0 18rem 0 0 ;
+  }
+  @media (max-width: 375px) {
+    margin:0 0 0 0px;
+
+  }
 }
 
 
@@ -433,3 +486,53 @@ h1 {
 .heading{
   color: #ffffff;
 }
+
+.table{
+  width:50rem;
+  height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f4d504;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#f4d504; 
+}
+
+.spline{
+  width: 100%;
+  height: 100%;
+  @media (max-width: 1024px) {
+    transform: scale(0.8) transform(200px);
+  }
+  @media (max-width: 800px) {
+    transform: scale(0.7) transform(600px);
+  }
+  @media (max-width: 600px) {
+    transform: scale(0.5) transform(-100px);
+    right: auto;
+    left: 50%;
+    margin-left: -600px;
+  }
+  @media (max-width: 375px) {
+    transform: scale(0.5) transform(-50px);
+    width:375px;
+
+  }
+}
+

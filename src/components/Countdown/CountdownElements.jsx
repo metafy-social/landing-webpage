@@ -99,5 +99,29 @@ export const Glass = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
   margin: 80px 0 0 240px;
+
+  @media (max-width: 1024px) {
+    width:60rem;
+    margin-left: 10px;
+   
+  }
+  @media (max-width: 800px) {
+    width:40rem;
+    margin-left: 30px;
+    height:40rem;
+  }
+  @media (max-width: 600px) {
+    transform: scale(0.5) transform(-100px);
+    right: auto;
+    left: 50%;
+    width:20rem;
+    margin-left: 450px;
+    height:40rem;
+  }
+  @media (max-width: 375px) {
+    transform: scale(0.5) transform(-50px);
+    width:375px;
+
+  }
 `
 

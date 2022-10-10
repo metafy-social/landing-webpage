@@ -23,8 +23,6 @@ const LearderBoard = () => {
           <Navbar toggle={toggle} />
           <Glass>
             <Menu>
-              
-             
             </Menu>
           </Glass>
         </Content>

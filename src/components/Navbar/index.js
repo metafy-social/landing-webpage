@@ -7,6 +7,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavLinksSub,
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
@@ -15,14 +16,10 @@ import HP from "../../assets/homep.png";
 import CT from "../../assets/countdw.png";
 import LD from "../../assets/users.png";
 import LOGO from "../../assets/logo_metafy.png";
-import { useTheme } from "@mui/material/styles";
-import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import Python from "../python";
-import Web3 from "../web3";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -45,17 +42,13 @@ function getStyles(name, personName, theme) {
 }
 
 const Navbar = ({ toggle }) => {
-  const theme = useTheme();
   const [personName, setPersonName] = React.useState([]);
 
   const handleChange = (event) => {
     const {
       target: { value },
     } = event;
-    setPersonName(
-      // On autofill we get a stringified value.
-      typeof value === "string" ? value.split(",") : value
-    );
+    setPersonName(typeof value === "string" ? value.split(",") : value);
   };
 
   return (
@@ -83,25 +76,22 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <FormControl sx={{ m: 1, width: 200 }}>
-                <InputLabel id="demo-multiple-name-label">
+              <FormControl variant="filled" sx={{ m: 1, minWidth: '16rem' }}>
+                <InputLabel sx={{color: 'white',fontFamily: 'Zen Dots',textTransform: 'uppercase', letterSpacing: '1.5px',fontSize: '1rem'}} id="demo-multiple-name-label">
                   <img className="eth" src={LD} alt="" />
                   Leaderboard
                 </InputLabel>
                 <Select
-                  labelId="demo-multiple-name-label"
-                  id="demo-multiple-name"
-                  multiple
-                  value={personName}
+                  labelId="demo-simple-select-filled-label"
+                  id="demo-simple-select-filled"
                   onChange={handleChange}
-                  input={<OutlinedInput label="Name" />}
                   MenuProps={MenuProps}
                 >
                   <MenuItem>
-                    <NavLinks to="/python">Python</NavLinks>
+                    <NavLinksSub to="/python">Python</NavLinksSub>
                   </MenuItem>
                   <MenuItem>
-                    <NavLinks to="/web3">Web3</NavLinks>
+                    <NavLinksSub to="/web3">Web3</NavLinksSub>
                   </MenuItem>
                 </Select>
               </FormControl>

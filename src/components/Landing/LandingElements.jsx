@@ -21,6 +21,7 @@ overflow-x:hidden;
     transform: scale(0.5) transform(-100px);
     right: auto;
     left: 50%;
+    height: 100%;
     margin-left: -600px;
   }
   @media (max-width: 375px) {
@@ -39,7 +40,21 @@ export const Content = styled.div`
   scrollbar:hidden;
 
   @media (max-width: 1024px) {
-    gap: 40px;
+    transform: scale(0.8) transform(200px);
+  }
+  @media (max-width: 800px) {
+    transform: scale(0.7) transform(600px);
+  }
+  @media (max-width: 600px) {
+    transform: scale(0.5) transform(-100px);
+    right: auto;
+    left: 50%;
+    margin-left: -600px;
+  }
+  @media (max-width: 375px) {
+    transform: scale(0.5) transform(-50px);
+    width:375px;
+
   }
   p {
     line-height: 1.8;
@@ -59,16 +74,47 @@ export const Content = styled.div`
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
     backdrop-filter: blur(15px);
+
+    margin: 50px 30px 0 680px;
+    width:680px;
+    padding:20px ;
+
+
+    @media (max-width: 1024px) {
+      margin: 1rem;
+    width:57rem;
+    padding:20px ;
+    color: #fff;
+    
+    }
+    @media (max-width: 800px) {
+      margin: 1rem;
+    width:42rem;
+    padding:20px ;
+    color: #fff;
+    }
+    @media (max-width: 600px) {
+      margin: 1rem;
+    width:23rem;
+    padding:20px ;
+    height: 36rem;
+    color: #fff;
+    font-size: 1.25rem;
+    height:50rem;
+    margin-top:0rem;
+
+    }
+    @media (max-width: 375px) {
+      transform: scale(0.5) transform(-50px);
+      width:23rem;
+      height: 10rem;
+  
+    }
   }
 
   h1{
     margin: 70px 30px 0 800px;
     font-size: 1.75rem;
-  }
-  p {
-    margin: 50px 30px 0 680px;
-    width:680px;
-    padding:20px ;
   }
 `;
 

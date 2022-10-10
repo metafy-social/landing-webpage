@@ -100,7 +100,7 @@ export const Glass = styled.div`
   );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
+  border-radius: 5px;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);

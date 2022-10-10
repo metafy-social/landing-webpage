@@ -79,10 +79,10 @@ const Countdown = () => {
         <Spline scene="https://prod.spline.design/O4T4WRxvG4luKqG1/scene.splinecode" />
 
         <Content>
-          <Navbar toggle={toggle} />
+          <Navbar/>
 
           <Glass>
-            <div className="glass">
+           
               <div className="body">
                 <div class="container">
                   <div class="container-segment">
@@ -119,18 +119,8 @@ const Countdown = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex">
-                <a href="https://github.com/metafy-social">
-                  <img className="logos" src={GH} alt="logo" />
-                </a>
-                <a href="https://www.linkedin.com/company/81321951/admin/">
-                  <img className="logos" src={LKD} alt="logo" />
-                </a>
-                <a href="/">
-                  <img className="logos" src={INS} alt="logo" />
-                </a>
-              </div>
-            </div>
+            
+           
           </Glass>
         </Content>
       </LandingWrapper>
