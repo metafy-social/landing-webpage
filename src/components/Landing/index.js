@@ -40,7 +40,7 @@ const Landing = () => {
         <h1>
           <Head>
             <h3>AT METAFY</h3>
-            </Head>
+          </Head>
 
           <Message>
             <div class="word1">we build</div>
@@ -71,7 +71,6 @@ const Landing = () => {
               We are currently working on a few projects and are looking for
               more people to come join us in our mission to make the world a
               better place for everyone.
-              
             </p>
           </div>
         </div>
