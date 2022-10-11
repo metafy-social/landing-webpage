@@ -13,6 +13,42 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 1;
 
+  @media screen and (max-width: 2000px) {
+    transition: 0.8s all ease;
+    width: 100rem;
+    margin-left: 10rem;
+  }
+
+  @media screen and (max-width: 1700px) {
+    transition: 0.8s all ease;
+    width: 100rem;
+    margin-left: 3rem;
+  }
+
+  @media screen and (max-width: 1600px) {
+    transition: 0.8s all ease;
+    width: 86rem;
+    margin-left: 5rem;
+  }
+
+  @media screen and (max-width: 1450px) {
+    transition: 0.8s all ease;
+    width: 82rem;
+    margin-left: 3rem;
+  }
+
+  @media screen and (max-width: 1350px) {
+    transition: 0.8s all ease;
+    width: 82rem;
+    margin-left: 0rem;
+  }
+
+  @media screen and (max-width: 1250px) {
+    transition: 0.8s all ease;
+    width: 78rem;
+    
+  }
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
