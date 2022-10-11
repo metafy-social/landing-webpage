@@ -24,6 +24,21 @@ font-family: "Zen Dots", cursive;
 
   }
 `
+export const SM = styled.div`
+  margin-left:15rem;
+
+  @media (max-width: 800px) {
+    margin-left:12rem;
+  }
+  @media (max-width: 600px) {
+    margin-left:6rem;
+  }
+  @media (max-width: 375px) {
+    margin-left:2rem;
+
+  }
+
+`
 
 export const LandingWrapper = styled.div`
   

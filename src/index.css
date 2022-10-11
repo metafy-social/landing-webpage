@@ -68,10 +68,6 @@ h1 {
   
 }
 
-.flexbox{
-  
-}
-
 .word1, .word2, .word3 {
   font-family: tahoma;
   display:flex;

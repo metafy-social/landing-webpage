@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
-import { LandingWrapper, Content ,Head,Message} from "./LandingElements";
+import { LandingWrapper, Content ,Head,Message, SM} from "./LandingElements";
 import Navbar from "../Navbar";
 import VanillaTilt from "vanilla-tilt";
 import LKD from "../../assets/linkedin.png";
@@ -53,7 +53,7 @@ const Landing = () => {
         <div className="css-typing">
           <div className="text">
             <p className="line">
-            <div className="sm">
+            <SM>
                 <a href="https://github.com/metafy-social">
                   <img className="logos" src={GH} alt="logo" />
                 </a>
@@ -63,7 +63,7 @@ const Landing = () => {
                 <a href="/">
                   <img className="logos" src={INS} alt="logo" />
                 </a>
-              </div>
+              </SM>
               We are building blockchain based solutions for real-world problems
               and making the blockchain more easily accessible to the public. We
               are a team of developers, designers, and blockchain enthusiasts
