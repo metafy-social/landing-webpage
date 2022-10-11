@@ -82,7 +82,7 @@ const SignUp = () => {
               discord: "Connected Discord",
               github: "Connected GitHub",
             });
-            navigate("/");
+            navigate("/signup");
           })
           .catch(() => {});
       }
@@ -113,7 +113,7 @@ const SignUp = () => {
               matamask: false,
             });
             setCookie("auth", data.hash, { path: "/" });
-            navigate("/");
+            navigate("/signup");
           })
           .catch(() => {});
       }
