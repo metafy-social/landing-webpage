@@ -123,30 +123,30 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 60rem;
       height: 35rem;
-      font-size: 1.5rem; 
+      font-size: 1.0rem; 
     }
   
     @media screen and (max-width: 1700px) {
       transition: 0.8s all ease;
       width: 55rem;
-      height: 40rem;
-      font-size: 1.5rem; 
+      height: 35rem;
+      font-size: 1.0rem; 
       
     }
   
     @media screen and (max-width: 1650px) {
       transition: 0.8s all ease;
       width: 50rem;
-      height: 40rem;
-      font-size: 1.5rem; 
+      height: 35rem;
+      font-size: 1.0rem; 
       
     }
 
     @media screen and (max-width: 1550px) {
       transition: 0.8s all ease;
       width: 45rem;
-      height: 40rem;
-      font-size: 1.5rem; 
+      height: 35rem;
+      font-size: 1.0rem; 
       margin-left:40rem;
       
     }
@@ -154,8 +154,8 @@ export const Content = styled.div`
     @media screen and (max-width: 1450px) {
       transition: 0.8s all ease;
       width: 45rem;
-      height: 40rem;
-      font-size: 1.5rem; 
+      height: 35rem;
+      font-size: 1.0rem; 
       margin-left:32rem;
      
     }
@@ -163,16 +163,16 @@ export const Content = styled.div`
     @media screen and (max-width: 1350px) {
       transition: 0.8s all ease;
       width: 45rem;
-      height:35rem;
-      font-size: 1.5rem; 
+      height: 25rem;
+      font-size: 1.0rem; 
       margin-left:28rem;
     }
   
     @media screen and (max-width: 1250px) {
       transition: 0.8s all ease;
       width: 45rem;
-      height: 35rem;
-      font-size: 1.5rem; 
+      height: 22rem;
+      font-size: 1.0 rem; 
       margin-left:20rem;
       
     }
@@ -181,8 +181,8 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       transition: 0.8s all ease;
       width: 40rem;
-      height: 35rem;
-      font-size: 1.35rem; 
+      height: 22rem;
+      font-size: 1.0rem; 
       margin-left:10rem;
     }
   
@@ -191,7 +191,7 @@ export const Content = styled.div`
      
       width: 35rem;
       height: 36rem;
-      font-size: 1.35rem; 
+      font-size: 1.0rem; 
       margin-left:10rem;
     }
 
@@ -199,7 +199,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 35rem;
       height: 36rem;
-      font-size: 1.35rem; 
+      font-size: 1.0rem; 
       margin-left:3rem;
     }
 
