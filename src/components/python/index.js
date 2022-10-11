@@ -14,7 +14,7 @@ import Paper from "@material-ui/core/Paper";
 
 const getData = async (value) => {
   const { data } = await axios.get(
-    `https://api.hacktoberfest.metafy.social/leaderboard?repo=${value}`
+    `${process.env.REACT_APP_URL}leaderboard?repo=${value}`
   );
 
   return data;
