@@ -17,13 +17,12 @@ overflow-x:hidden;
     transform: scale(0.7) transform(600px);
   }
   @media (max-width: 600px) {
-    transform: scale(0.5) transform(-100px);
     right: auto;
     left: 50%;
     margin-left: -600px;
   }
   @media (max-width: 375px) {
-    transform: scale(0.5) transform(-50px);
+  
     width:375px;
 
   }
@@ -37,7 +36,21 @@ export const Content = styled.div`
   gap: 70px;
 
   @media (max-width: 1024px) {
-    gap: 40px;
+    transform: scale(0.8) transform(200px);
+  }
+  @media (max-width: 800px) {
+    transform: scale(0.7) transform(600px);
+  }
+  @media (max-width: 600px) {
+    transform: scale(0.5) transform(-100px);
+    right: auto;
+    left: 50%;
+    margin-left: -600px;
+  }
+  @media (max-width: 375px) {
+    transform: scale(0.5) transform(-50px);
+    width:375px;
+
   }
   p {
     line-height: 1.8;
@@ -47,7 +60,145 @@ export const Content = styled.div`
     height: 370px;
     display: flex;
     margin-top: 20px;
-   
+  }
+`;
+
+export const Title = styled.div`
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  text-transform:uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top:0rem;
+  color:#F2F2F2;
+  text-align: center;
+  justify-content: center;
+
+
+  @media (max-width: 1150px) {
+    font-size: 1.4rem;
+    gap:0;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 800px) {
+    margin-right: 0rem;
+    font-size: 1rem;
+    margin-top:1.5rem;
+  }
+  @media (max-width: 600px) {
+    margin-left: 0px;
+    flex-direction:column;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top:1rem;
+    justify-content: center;
+  }
+  @media (max-width: 375px) {
+    left:0rem;
+    margin-top:1.5rem;
+  }
+}
+
+`;
+
+export const Body = styled.button`
+  color: #f4d504;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 7rem;
+  background: #383838;
+
+  @media (max-width: 1150px) {
+    font-size: 5rem;
+  }
+  @media (max-width: 800px) {
+    font-size: 5rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 3rem;
+  }
+`;
+
+export const Container = styled.div`
+  display: inline-flex;
+  margin-top: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 18rem;
+  
+
+  @media (max-width: 1150px) {
+    gap: 3rem;
+    margin-left:4rem;
+    align-items: left;
+    margin-left: 15rem;
+
+  }
+  @media (max-width: 960px) {
+    gap: 1.5rem;
+    margin-left:1.4rem;
+    align-items: left;
+  }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+`;
+
+export const FlipCard = styled.div`
+  display: inline-flex;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.1em;
+  //background-color: #383838;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  height: 11rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
+  gap:1rem;
+  
+
+  @media screen and (max-width: 1150px) {
+    width: 8rem;
+    height: 8rem;
+    margin-left: 0rem;
+    gap:0rem;
+  }
+  
+  @media (max-width: 800px) {
+    width: 40rem;
+    margin-left: 30px;
+    height: 40rem;
+  }
+  @media (max-width: 600px) {
+    transform: scale(0.5) transform(-100px);
+    right: auto;
+    left: 50%;
+    width: 7rem;
+    margin-left:1rem;
+    height: 7rem;
+  }
+  @media (max-width: 375px) {
+    transform: scale(0.5) transform(-50px);
+    width: 375px;
   }
 `;
 
@@ -83,9 +234,8 @@ export const Menu = styled.ul`
 export const Glass = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 500px;
+  height: 34rem;
   z-index: 1;
-  width: 100%;
   width: 1050px;
   background: linear-gradient(
     135deg,
@@ -98,30 +248,72 @@ export const Glass = styled.div`
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
-  margin: 80px 0 0 240px;
+  margin: 20px 0 0 240px;
 
-  @media (max-width: 1024px) {
-    width:60rem;
-    margin-left: 10px;
-   
+  @media screen and (max-width: 2000px) {
+    transition: 0.8s all ease;
+    margin-left: 30rem;
+    margin-top: 10rem;
   }
-  @media (max-width: 800px) {
-    width:40rem;
-    margin-left: 30px;
-    height:40rem;
+
+  @media screen and (max-width: 1700px) {
+    transition: 0.8s all ease;
+    margin-left: 22rem;
+  }
+
+  @media screen and (max-width: 1650px) {
+    transition: 0.8s all ease;
+    margin-left: 20rem;
+  }
+
+  @media screen and (max-width: 1550px) {
+    transition: 0.8s all ease;
+    margin-left: 17rem;
+  }
+
+  @media screen and (max-width: 1450px) {
+    transition: 0.8s all ease;
+    margin-left: 12rem;
+  }
+
+  @media screen and (max-width: 1350px) {
+    transition: 0.8s all ease;
+    margin-left: 8rem;
+  }
+
+  @media screen and (max-width: 1250px) {
+    margin-left: 5rem;
+  }
+
+  @media (max-width: 1150px) {
+    width: 50rem;
+    margin-left: 10rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 6rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    margin-left: 4rem;
+    width: 50rem;
+  }
+
+  @media (max-width: 900px) {
+    width: 35rem;
+    margin-left: 5rem;
+    height:15rem;
   }
   @media (max-width: 600px) {
     transform: scale(0.5) transform(-100px);
-    right: auto;
-    left: 50%;
-    width:20rem;
-    margin-left: 450px;
-    height:40rem;
+    width: 20rem;
+    margin-left: 5rem;
+    height:22rem;
   }
   @media (max-width: 375px) {
     transform: scale(0.5) transform(-50px);
-    width:375px;
-
+    width: 30rem;
+    margin-left: 1rem;
+    height:20rem;
   }
-`
-
+`;

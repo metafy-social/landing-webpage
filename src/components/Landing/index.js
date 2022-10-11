@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
-import { LandingWrapper, Content } from "./LandingElements";
+import { LandingWrapper, Content ,Head,Message} from "./LandingElements";
 import Navbar from "../Navbar";
 import VanillaTilt from "vanilla-tilt";
 import LKD from "../../assets/linkedin.png";
 import GH from "../../assets/github.png";
 import INS from "../../assets/instagram.png";
+import Sidebar from "../Sidebar";
 
 function Card(props) {
   const { options, ...rest } = props;
@@ -21,9 +22,9 @@ function Card(props) {
 const Landing = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // const toggle = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <LandingWrapper>
@@ -33,17 +34,20 @@ const Landing = () => {
       />
 
       <Content>
-        <Navbar />
+        <Sidebar isOpen={isOpen} toggle={toggle}/>
+        <Navbar toggle={toggle}/>
 
         <h1>
-          <h3 className="head2">AT METAFY</h3>
+          <Head>
+            <h3>AT METAFY</h3>
+            </Head>
 
-          <div class="message">
+          <Message>
             <div class="word1">we build</div>
             <div class="word2">we connect</div>
 
             <div class="word3">we expand</div>
-          </div>
+          </Message>
         </h1>
         {/* <Card> */}
         <div className="css-typing">

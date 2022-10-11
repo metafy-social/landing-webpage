@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
-import {Link as LinkS} from 'react-scroll';
 import {Link as LinkR} from 'react-router-dom';
 
 
@@ -15,9 +14,8 @@ export const SidebarContainer = styled.aside`
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-     opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
+    opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
     top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
-
 `
 export const CloseIcon = styled(FaTimes)`
     color: #fff;
@@ -35,10 +33,10 @@ export const Icon = styled.div`
     `
 
 export const SidebarWrapper = styled.div`
-    color: #fff;
+    
 
 `
-export const SidebarLink = styled(LinkS)`
+export const SidebarLink = styled(LinkR)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +46,8 @@ export const SidebarLink = styled(LinkS)`
     transition: 0.2s ease-in-out;
     color: #fff;
     cursor: pointer;
+    font-family:"Zen Dots", cursive;
+    text-transform: uppercase;
 
     &:hover {
         color: #FFD523;
@@ -68,12 +68,15 @@ export const SidebarRoute = styled(LinkR)`
     white-space: nowrap;
     padding: 16px 64px;
     color: #010606;
-    font-size: 16px;
+    font-size: 1.2rem;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    font-family:"Zen Dots", cursive;
+    text-transform: uppercase;
+
 
     &:hover {
         transition: all 0.2s ease-in-out;

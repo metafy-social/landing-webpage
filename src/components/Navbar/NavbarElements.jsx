@@ -8,7 +8,6 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -45,12 +44,55 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 1250px) {
     transition: 0.8s all ease;
-    width: 78rem;
+    width: 74rem;
+    margin-left: 0rem;
+  }
+
+  @media screen and (max-width: 1150px) {
+    transition: 0.8s all ease;
+    width: 70rem;
+    font-size: 0.5rem;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1050px) {
+    transition: 0.8s all ease;
+    width: 60rem;
+  }
+
+  @media (max-width: 800px) {
+    width:40rem;
+    margin-left: 3rem;
     
   }
 
-  @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
+  @media (max-width: 600px) {
+    width:30rem;
+    margin-left: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    width:30rem;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 500px) {
+    width:27rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 400px) {
+    width:25rem;
+    margin-left: 2.5rem;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 360px) {
+    width:25rem;
+    margin-left: 2rem;
+    font-size: 0.75rem;
   }
 `;
 
@@ -138,6 +180,10 @@ export const NavLinks = styled(LinkR)`
     transition: all 0.2s ease-in-out;
     border-bottom: 4px solid #f4d504
   }
+
+  @media screen and (max-width: 1250px) {
+    margin-right: 2rem;
+  }
 `;
 
 export const NavLinksSub = styled(LinkR)`
@@ -171,7 +217,13 @@ export const NavBtn = styled.nav`
   align-items: center;
   margin-right:2rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1250px) {
+    transition: 0.8s all ease;
+    margin-left: 0rem;
+    margin-right:5rem;
+  }
+
+  @media screen and (max-width:1250px) {
     display: none;
   }
 `;
@@ -184,15 +236,25 @@ export const NavBtnLink = styled(LinkR)`
   font-size: 1rem;
   outline: none;
   border: none;
-
+  font-family:"Zen Dots", cursive;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+
+  @media screen and (max-width: 1250px) {
+    transition: 0.8s all ease;
+    margin-top: 15rem;
+    margin-right: 10rem;
+  }
+
 
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
   }
-`;
+`
+
+;
 

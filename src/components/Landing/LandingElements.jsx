@@ -1,5 +1,30 @@
 import styled from "styled-components";
 
+export const Head = styled.h3`
+font-family: "Zen Dots", cursive;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-bottom: 1rem;
+  margin-right:14rem;
+
+  
+  @media (max-width: 800px) {
+    margin-right: 0rem;
+    display:none;
+  }
+  @media (max-width: 600px) {
+    margin-right: 0rem;
+    display:none;
+  }
+  @media (max-width: 375px) {
+    margin-right: 0rem;
+    display:none;
+
+  }
+`
+
 export const LandingWrapper = styled.div`
   
 color: #fff;
@@ -79,42 +104,172 @@ export const Content = styled.div`
     width:680px;
     padding:20px ;
 
-
-    @media (max-width: 1024px) {
-      margin: 1rem;
-    width:57rem;
-    padding:20px ;
-    color: #fff;
-    
+    @media screen and (max-width: 2000px) {
+      transition: 0.8s all ease;
+      width: 60rem;
+      height: 35rem;
+      font-size: 1.5rem; 
     }
-    @media (max-width: 800px) {
-      margin: 1rem;
-    width:42rem;
-    padding:20px ;
-    color: #fff;
-    }
-    @media (max-width: 600px) {
-      margin: 1rem;
-    width:23rem;
-    padding:20px ;
-    height: 36rem;
-    color: #fff;
-    font-size: 1.25rem;
-    height:50rem;
-    margin-top:0rem;
-
-    }
-    @media (max-width: 375px) {
-      transform: scale(0.5) transform(-50px);
-      width:23rem;
-      height: 10rem;
   
+    @media screen and (max-width: 1700px) {
+      transition: 0.8s all ease;
+      width: 55rem;
+      height: 40rem;
+      font-size: 1.5rem; 
+      
+    }
+  
+    @media screen and (max-width: 1650px) {
+      transition: 0.8s all ease;
+      width: 50rem;
+      height: 40rem;
+      font-size: 1.5rem; 
+      
+    }
+
+    @media screen and (max-width: 1550px) {
+      transition: 0.8s all ease;
+      width: 45rem;
+      height: 40rem;
+      font-size: 1.5rem; 
+      margin-left:40rem;
+      
+    }
+  
+    @media screen and (max-width: 1450px) {
+      transition: 0.8s all ease;
+      width: 45rem;
+      height: 40rem;
+      font-size: 1.5rem; 
+      margin-left:32rem;
+     
+    }
+  
+    @media screen and (max-width: 1350px) {
+      transition: 0.8s all ease;
+      width: 45rem;
+      height:35rem;
+      font-size: 1.5rem; 
+      margin-left:28rem;
+    }
+  
+    @media screen and (max-width: 1250px) {
+      transition: 0.8s all ease;
+      width: 45rem;
+      height: 35rem;
+      font-size: 1.5rem; 
+      margin-left:20rem;
+      
+    }
+
+    @media screen and (max-width: 1150px) {
+      transition: 0.8s all ease;
+      transition: 0.8s all ease;
+      width: 40rem;
+      height: 35rem;
+      font-size: 1.35rem; 
+      margin-left:10rem;
+    }
+  
+    @media screen and (max-width: 960px) {
+      transition: 0.8s all ease;
+     
+      width: 35rem;
+      height: 36rem;
+      font-size: 1.35rem; 
+      margin-left:10rem;
+    }
+
+    @media (max-width: 850px) {
+      transition: 0.8s all ease;
+      width: 35rem;
+      height: 36rem;
+      font-size: 1.35rem; 
+      margin-left:3rem;
+    }
+
+
+    @media (max-width: 600px) {
+      width: 28rem;
+      margin-left: 0rem;
+      height: 45rem;
+    }
+
+    @media (max-width: 450px) {
+      width: 24rem;
+      margin-left: 1rem;
+      height: 50rem;
+    }
+    
+    @media (max-width: 400px) {
+      width: 23rem;
+      margin-left: 1rem;
+      height: 53rem;
     }
   }
 
   h1{
     margin: 70px 30px 0 800px;
     font-size: 1.75rem;
+
+    @media screen and (max-width: 2000px) {
+      transition: 0.8s all ease;
+      margin-left: 60rem;
+    }
+  
+    @media screen and (max-width: 1700px) {
+      transition: 0.8s all ease;
+      margin-left: 55rem; 
+    }
+  
+    @media screen and (max-width: 1650px) {
+      transition: 0.8s all ease;
+      margin-left: 52rem; 
+    }
+
+    @media screen and (max-width: 1550px) {
+      transition: 0.8s all ease;
+      margin-left:50rem;
+      
+    }
+  
+    @media screen and (max-width: 1450px) {
+      transition: 0.8s all ease;
+      margin-left:40rem;
+    }
+  
+    @media screen and (max-width: 1350px) {
+      transition: 0.8s all ease;
+      margin-left:35rem;
+    }
+  
+    @media screen and (max-width: 1250px) {
+      margin-left:30rem;
+    }
+
+    @media screen and (max-width: 1150px) {
+      margin-left:25rem;
+    }
+  
+    @media screen and (max-width: 960px) {
+      margin-left:20rem;
+    }
+
+    @media (max-width: 800px) {
+      margin: 1rem;
+    width:42rem;
+    padding:20px ;
+    color: #fff;
+    
+    }
+    @media (max-width: 600px) {
+     
+
+    }
+    @media (max-width: 375px) {
+     
+  
+    }
   }
 `;
 
@@ -144,5 +299,34 @@ export const Menu = styled.ul`
     // &:hover {
     //   border: 1px solid rgba(255, 255, 255, 0.5);
     // }
+  }
+`
+
+export const Message = styled.div`
+background-color: #f4d504;
+  color: #333;
+  font-weight: 800;
+  overflow: hidden;
+  position: absolute;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  left:20rem;
+
+  animation: openclose 8s ease-in-out infinite;
+
+  @media (max-width: 1024px) {
+    margin-right: 0rem;
+  }
+  @media (max-width: 800px) {
+    margin-right: 0rem;
+  }
+  @media (max-width: 600px) {
+    display:none;
+  }
+  @media (max-width: 375px) {
+    // left:0rem;
+    display:none;
+
   }
 `;

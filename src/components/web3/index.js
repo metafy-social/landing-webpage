@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar";
 import Spline from "@splinetool/react-spline";
-import { Glass, LandingWrapper, Content } from "../python/PythonElements";
+import { Glass, LandingWrapper, Content , Header } from "../python/PythonElements";
 import axios from "axios";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
@@ -11,6 +11,7 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import Sidebar from "../Sidebar";
 
 const getData = async (value) => {
   const { data } = await axios.get(
@@ -87,8 +88,9 @@ const Python = () => {
         <Spline scene="https://prod.spline.design/O4T4WRxvG4luKqG1/scene.splinecode" />
 
         <Content>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
           <Navbar toggle={toggle} />
-          <h2 className="header">Web 3.0 Leaderboard</h2>
+          <Header><h3 className="header">Web 3.0 Leaderboard</h3></Header>
           <Glass>
             <TableContainer component={Paper}>
               <Table className={classes.table} aria-label="customized table">

@@ -7,6 +7,8 @@ import Spline from "@splinetool/react-spline";
 import { Wrapper,Content,WelcomeText, Container} from "./SignUpElements";
 import swal from "sweetalert";
 import Navbar from "../Navbar";
+import Sidebar from "../Sidebar";
+
 
 const SignUp = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -241,7 +243,8 @@ const SignUp = () => {
       <Spline scene="https://prod.spline.design/O4T4WRxvG4luKqG1/scene.splinecode" />
       
         <Content>
-        <Navbar toggle={toggle} />
+          <Sidebar isOpen={isOpen} toggle={toggle} />
+          <Navbar toggle={toggle} />
         <Container>
         <form onSubmit={handleSubmit}>
             <WelcomeText>Metafy</WelcomeText>

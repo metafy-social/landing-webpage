@@ -1,13 +1,21 @@
-import React, { useState,useRef,useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
-import { LandingWrapper, Content, Glass } from "./CountdownElements";
+import {
+  LandingWrapper,
+  Content,
+  Glass,
+  FlipCard,
+  Title,
+  Container,
+  Body,
+} from "./CountdownElements";
 import Navbar from "../Navbar";
 import LKD from "../../assets/linkedin.png";
 import GH from "../../assets/github.png";
 import INS from "../../assets/instagram.png";
+import Sidebar from "../Sidebar";
 
 const Countdown = () => {
-
   const [timerDays, setTimerDays] = useState("00");
   const [timerHours, setTimerHours] = useState("00");
   const [timerMinutes, setTimerMinutes] = useState("00");
@@ -23,12 +31,10 @@ const Countdown = () => {
       const distance = countdownDate - now;
 
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor( 
+      const hours = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      const minutes = Math.floor(
-        (distance % (1000 * 60 * 60)) / (1000 * 60)
-      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       if (distance < 0) {
@@ -42,22 +48,20 @@ const Countdown = () => {
         setTimerSeconds(seconds);
       }
 
-      if(days<10){
-        setTimerDays("0"+days);
+      if (days < 10) {
+        setTimerDays("0" + days);
       }
-      if(hours<10){
-        setTimerHours("0"+hours);
+      if (hours < 10) {
+        setTimerHours("0" + hours);
       }
-      if(minutes<10){
-        setTimerMinutes("0"+minutes);
+      if (minutes < 10) {
+        setTimerMinutes("0" + minutes);
       }
-      if(seconds<10){
-        setTimerSeconds("0"+seconds);
+      if (seconds < 10) {
+        setTimerSeconds("0" + seconds);
       }
-
-
     }, 1000);
-  }; 
+  };
 
   //componentDidMount
   useEffect(() => {
@@ -66,7 +70,6 @@ const Countdown = () => {
       clearInterval(interval.current);
     };
   });
-
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -79,48 +82,46 @@ const Countdown = () => {
         <Spline scene="https://prod.spline.design/O4T4WRxvG4luKqG1/scene.splinecode" />
 
         <Content>
-          <Navbar/>
+          <Sidebar isOpen={isOpen} toggle={toggle} />
+          <Navbar toggle={toggle} />
 
           <Glass>
-           
-              <div className="body">
-                <div class="container">
+            <div className="body">
+              <Container>
+                <div className="flexbox">
                   <div class="container-segment">
-                    <div class="segment-title">Days</div>
-                    <div class="segment">
-                      <div class="flip-card" id="days">
-                        {timerDays}
-                      </div>
-                    </div>
+                    <Title>Days</Title>
+
+                    <FlipCard id="days">
+                      <Body>{timerDays}</Body>
+                    </FlipCard>
                   </div>
                   <div class="container-segment">
-                    <div class="segment-title">Hours</div>
-                    <div class="segment">
-                      <div class="flip-card" id="days">
-                      {timerHours}
-                      </div>
-                    </div>
-                  </div>
-                  <div class="container-segment">
-                    <div class="segment-title">Minutes</div>
-                    <div class="segment">
-                      <div class="flip-card" id="minutes">
-                      {timerMinutes}
-                      </div>
-                    </div>
-                  </div>
-                  <div class="container-segment">
-                    <div class="segment-title">Seconds</div>
-                    <div class="segment">
-                      <div class="flip-card" id="seconds">
-                      {timerSeconds}
-                      </div>
-                    </div>
+                    <Title>Hours</Title>
+
+                    <FlipCard id="days">
+                      <Body> {timerHours}</Body>
+                    </FlipCard>
                   </div>
                 </div>
-              </div>
-            
-           
+                <div className="flexbox">
+                  <div class="container-segment">
+                    <Title>Minutes</Title>
+
+                    <FlipCard id="minutes">
+                      <Body>{timerMinutes}</Body>
+                    </FlipCard>
+                  </div>
+                  <div class="container-segment">
+                    <Title>Seconds</Title>
+
+                    <FlipCard id="seconds">
+                      <Body>{timerSeconds}</Body>
+                    </FlipCard>
+                  </div>
+                </div>
+              </Container>
+            </div>
           </Glass>
         </Content>
       </LandingWrapper>
