@@ -165,7 +165,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 45rem;
       height: 23rem;
-      font-size: 1.25rem; 
+      font-size: 1.1rem; 
       margin-left:32rem;
      
     }
@@ -174,7 +174,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 45rem;
       height: 22rem;
-      font-size: 1.2rem; 
+      font-size: 1rem; 
       margin-left:28rem;
     }
   
@@ -182,7 +182,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 45rem;
       height: 22rem;
-      font-size: 1.2 rem; 
+      font-size: 1rem; 
       margin-left:20rem;
       
     }
@@ -192,7 +192,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 40rem;
       height: 22rem;
-      font-size: 1.2rem; 
+      font-size: 1rem; 
       margin-left:10rem;
     }
   
