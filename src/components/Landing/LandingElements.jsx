@@ -7,8 +7,11 @@ font-family: "Zen Dots", cursive;
   font-size: 1.5rem;
   color: #fff;
   padding-bottom: 1rem;
-  margin-right:14rem;
+  margin-right: 22rem;
 
+  h3 {
+    font-family: "Zen Dots", cursive;
+  }
   
   @media (max-width: 800px) {
     margin-right: 0rem;
@@ -154,7 +157,7 @@ export const Content = styled.div`
     @media screen and (max-width: 1450px) {
       transition: 0.8s all ease;
       width: 45rem;
-      height: 35rem;
+      height: 23rem;
       font-size: 1.0rem; 
       margin-left:32rem;
      
@@ -163,7 +166,7 @@ export const Content = styled.div`
     @media screen and (max-width: 1350px) {
       transition: 0.8s all ease;
       width: 45rem;
-      height: 25rem;
+      height: 22rem;
       font-size: 1.0rem; 
       margin-left:28rem;
     }
@@ -324,9 +327,10 @@ background-color: #f4d504;
   overflow: hidden;
   position: absolute;
   flex-direction: column;
-  padding-left: 0.5rem;
-  margin-left: 1rem;
+  padding-right: 25px;
+  margin-left: 2.2rem;
   left:20rem;
+  margin-top: -0.5rem;
 
   animation: openclose 8s ease-in-out infinite;
 
