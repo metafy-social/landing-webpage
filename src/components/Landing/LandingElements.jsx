@@ -28,18 +28,25 @@ font-family: "Zen Dots", cursive;
   }
 `
 export const SM = styled.div`
-  margin-left:15rem;
+  //margin-left:15rem;
+  text-align:center;
+  justify-content:center;
 
-  @media (max-width: 800px) {
-    margin-left:12rem;
+  @media (max-width: 1920px) {
+    // margin-left:16rem;
+    
   }
-  @media (max-width: 600px) {
-    margin-left:6rem;
-  }
-  @media (max-width: 375px) {
-    margin-left:2rem;
 
-  }
+  // @media (max-width: 800px) {
+  //   margin-left:12rem;
+  // }
+  // @media (max-width: 600px) {
+  //   margin-left:6rem;
+  // }
+  // @media (max-width: 375px) {
+  //   margin-left:2rem;
+
+  // }
 
 `
 
@@ -101,7 +108,7 @@ export const Content = styled.div`
   }
   p {
     line-height: 1.8;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     background: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
@@ -126,14 +133,14 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 60rem;
       height: 35rem;
-      font-size: 1.0rem; 
+      font-size: 1.35rem; 
     }
   
     @media screen and (max-width: 1700px) {
       transition: 0.8s all ease;
       width: 55rem;
       height: 35rem;
-      font-size: 1.0rem; 
+      font-size: 1.35rem; 
       
     }
   
@@ -141,7 +148,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 50rem;
       height: 35rem;
-      font-size: 1.0rem; 
+      font-size: 1.35rem; 
       
     }
 
@@ -149,7 +156,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 45rem;
       height: 35rem;
-      font-size: 1.0rem; 
+      font-size: 1.3rem; 
       margin-left:40rem;
       
     }
@@ -158,7 +165,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 45rem;
       height: 23rem;
-      font-size: 1.0rem; 
+      font-size: 1.25rem; 
       margin-left:32rem;
      
     }
@@ -167,7 +174,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 45rem;
       height: 22rem;
-      font-size: 1.0rem; 
+      font-size: 1.2rem; 
       margin-left:28rem;
     }
   
@@ -175,7 +182,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 45rem;
       height: 22rem;
-      font-size: 1.0 rem; 
+      font-size: 1.2 rem; 
       margin-left:20rem;
       
     }
@@ -185,7 +192,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 40rem;
       height: 22rem;
-      font-size: 1.0rem; 
+      font-size: 1.2rem; 
       margin-left:10rem;
     }
   

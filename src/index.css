@@ -84,15 +84,15 @@ h1 {
     text-indent: 0;
   }
   5% {
-    top: 0.5rem;
-    width:10px;
+    top: 1rem;
+    width:5px;
   }
   15% {
     top: 0.5rem;
     width: 220px;
   }
   30% {
-    top: 0.5rem;
+    top: 1rem;
     width: 220px;
   }
   45% {
@@ -112,10 +112,17 @@ h1 {
     width: 220px;
   }
   90% {
+    
     width: 10px;
   }
+  95% {
+    
+    width: 10px;
+  }
+
+
   100% {
-    top: -9rem;
+    top: -12rem;
     width: 0;
     text-indent: 0;
   }
