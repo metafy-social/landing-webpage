@@ -126,20 +126,20 @@ export const Content = styled.div`
     backdrop-filter: blur(15px);
 
     margin: 50px 30px 0 680px;
-    width:680px;
+   
     padding:20px ;
 
     @media screen and (max-width: 2000px) {
       transition: 0.8s all ease;
       width: 60rem;
-      height: 35rem;
+      height: 26rem;
       font-size: 1.35rem; 
     }
   
     @media screen and (max-width: 1700px) {
       transition: 0.8s all ease;
       width: 55rem;
-      height: 35rem;
+      height: 26rem;
       font-size: 1.35rem; 
       
     }
@@ -147,16 +147,16 @@ export const Content = styled.div`
     @media screen and (max-width: 1650px) {
       transition: 0.8s all ease;
       width: 50rem;
-      height: 35rem;
-      font-size: 1.35rem; 
+      height: 25rem;
+      font-size: 1.1rem; 
       
     }
 
     @media screen and (max-width: 1550px) {
       transition: 0.8s all ease;
       width: 45rem;
-      height: 35rem;
-      font-size: 1.3rem; 
+      height: 25rem;
+      font-size: 1.1rem; 
       margin-left:40rem;
       
     }
@@ -174,7 +174,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 45rem;
       height: 22rem;
-      font-size: 1rem; 
+      font-size: 1.1rem; 
       margin-left:28rem;
     }
   
@@ -182,7 +182,7 @@ export const Content = styled.div`
       transition: 0.8s all ease;
       width: 45rem;
       height: 22rem;
-      font-size: 1rem; 
+      font-size: 1.1rem; 
       margin-left:20rem;
       
     }
