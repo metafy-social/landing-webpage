@@ -10,10 +10,11 @@ import {
   Body,
 } from "./CountdownElements";
 import Navbar from "../Navbar";
-import LKD from "../../assets/linkedin.png";
-import GH from "../../assets/github.png";
-import INS from "../../assets/instagram.png";
+// import LKD from "../../assets/linkedin.png";
+// import GH from "../../assets/github.png";
+// import INS from "../../assets/instagram.png";
 import Sidebar from "../Sidebar";
+import "./countdown.css";
 
 const Countdown = () => {
   const [timerDays, setTimerDays] = useState("00");
@@ -85,10 +86,10 @@ const Countdown = () => {
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Navbar toggle={toggle} />
 
-          <Glass>
+          
             <div className="body">
               <Container>
-                <div className="flexbox">
+                {/* <div className="flexbox">
                   <div class="container-segment">
                     <Title>Days</Title>
 
@@ -115,14 +116,19 @@ const Countdown = () => {
                   <div class="container-segment">
                     <Title>Seconds</Title>
 
+                    
                     <FlipCard id="seconds">
                       <Body>{timerSeconds}</Body>
                     </FlipCard>
                   </div>
+                </div> */}
+                <div class="container">
+                  <h1 class="neonText">Something is Cooking ! </h1>
+                  
                 </div>
               </Container>
             </div>
-          </Glass>
+          
         </Content>
       </LandingWrapper>
     </div>

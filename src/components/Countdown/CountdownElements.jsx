@@ -5,26 +5,36 @@ export const LandingWrapper = styled.div`
 color: #fff;
 position: relative;
 display: flex;
+text-align: center;
 min-height:100%;
 position:fixed;
 overflow-y:scroll;
 overflow-x:hidden;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1400px) {
+  transform: scale(0.8) transform(200px);
+  //text-align: center;
+  }
+
+  @media (max-width: 1200px) {
     transform: scale(0.8) transform(200px);
+    //text-align: left;
+  }
+
+  @media (max-width: 1110px) {
+    transform: scale(0.8) transform(200px);
+    //text-align: left;
   }
   @media (max-width: 800px) {
     transform: scale(0.7) transform(600px);
   }
   @media (max-width: 600px) {
-    right: auto;
     left: 50%;
     margin-left: -600px;
+
   }
   @media (max-width: 375px) {
-  
     width:375px;
-
   }
 }
 `;
@@ -49,8 +59,7 @@ export const Content = styled.div`
   }
   @media (max-width: 375px) {
     transform: scale(0.5) transform(-50px);
-    width:375px;
-
+    width: 375px;
   }
   p {
     line-height: 1.8;
@@ -71,8 +80,8 @@ export const Title = styled.div`
   letter-spacing: 3px;
   margin-top:0rem;
   color:#F2F2F2;
-  text-align: center;
-  justify-content: center;
+  // text-align: center;
+  // justify-content: center;
 
 
   @media (max-width: 1150px) {
@@ -127,28 +136,25 @@ export const Body = styled.button`
 export const Container = styled.div`
   display: inline-flex;
   margin-top: 1.25rem;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  margin-left: 18rem;
-  
+  justify-content: left;
+  align-items: left;
+  // margin-left: 18rem;
 
   @media (max-width: 1150px) {
     gap: 3rem;
-    margin-left:4rem;
+    margin-left: 4rem;
     align-items: left;
     margin-left: 15rem;
-
   }
   @media (max-width: 960px) {
     gap: 1.5rem;
-    margin-left:1.4rem;
+    margin-left: 1.4rem;
     align-items: left;
   }
   @media (max-width: 600px) {
     display: flex;
     flex-direction: row;
-    margin-left: 1rem;
+    margin-left: 0rem;
     margin-top: 0rem;
   }
   @media (max-width: 375px) {
@@ -173,16 +179,15 @@ export const FlipCard = styled.div`
   height: 11rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
-  gap:1rem;
-  
+  gap: 1rem;
 
   @media screen and (max-width: 1150px) {
     width: 8rem;
     height: 8rem;
     margin-left: 0rem;
-    gap:0rem;
+    gap: 0rem;
   }
-  
+
   @media (max-width: 800px) {
     width: 40rem;
     margin-left: 30px;
@@ -193,7 +198,7 @@ export const FlipCard = styled.div`
     right: auto;
     left: 50%;
     width: 7rem;
-    margin-left:1rem;
+    margin-left: 1rem;
     height: 7rem;
   }
   @media (max-width: 375px) {
@@ -234,9 +239,9 @@ export const Menu = styled.ul`
 export const Glass = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 34rem;
   z-index: 1;
-  width: 1050px;
+  width: 1000px;
+  height: 32rem;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -248,17 +253,17 @@ export const Glass = styled.div`
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(244, 213, 4, 0.37);
-  margin: 20px 0 0 240px;
+  margin: 20px 0 0 0px;
 
   @media screen and (max-width: 2000px) {
     transition: 0.8s all ease;
     margin-left: 30rem;
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
 
   @media screen and (max-width: 1700px) {
     transition: 0.8s all ease;
-    margin-left: 22rem;
+    margin-left: 15rem;
   }
 
   @media screen and (max-width: 1650px) {
@@ -279,41 +284,46 @@ export const Glass = styled.div`
   @media screen and (max-width: 1350px) {
     transition: 0.8s all ease;
     margin-left: 8rem;
+    height: 32rem;
   }
 
   @media screen and (max-width: 1250px) {
     margin-left: 5rem;
+    height: 32rem;
   }
 
   @media (max-width: 1150px) {
     width: 50rem;
     margin-left: 10rem;
+    height: 32rem;
   }
 
   @media screen and (max-width: 1024px) {
     margin-left: 6rem;
+    height: 32rem;
   }
 
   @media screen and (max-width: 960px) {
     margin-left: 4rem;
     width: 50rem;
+    height: 32rem;
   }
 
   @media (max-width: 900px) {
-    width: 35rem;
-    margin-left: 5rem;
-    height:15rem;
+    width: 30rem;
+    margin-left: 6rem;
+    height: 35rem;
   }
   @media (max-width: 600px) {
     transform: scale(0.5) transform(-100px);
-    width: 20rem;
-    margin-left: 5rem;
-    height:22rem;
+    width: 30rem;
+    margin-left: 1rem;
+    height: 35rem;
   }
   @media (max-width: 375px) {
     transform: scale(0.5) transform(-50px);
     width: 30rem;
     margin-left: 1rem;
-    height:20rem;
+    height: 32rem;
   }
 `;

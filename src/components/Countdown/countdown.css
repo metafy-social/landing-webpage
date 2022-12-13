@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+.neonText {
+    color: #fff;
+    padding-top:1.4rem;
+    height:100vh;
+    font-family: 'Cedarville Cursive', cursive;
+    text-align: left;
+    text-transform: none;
+    width:100vh;
+    margin-top:18rem;
+    margin-left:4rem;
+    font-size:2.25rem;
+    line-height: 0.8;
+    animation: flicker 1.5s infinite alternate;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #2E2E2E,
+        0 0 82px #2E2E2E,
+        0 0 92px #2E2E2E,
+        0 0 102px #2E2E2E,
+        0 0 151px #2E2E2E;
+        
+
+          
+    @media screen and (max-width: 1024px) {
+      transform: scale(0.8) transform(200px);
+    }
+    @media (max-width: 800px) {
+      transform: scale(0.7) transform(600px);
+    }
+    @media (max-width: 600px) {
+      
+      font-size:0.5rem;
+
+    }
+    @media (max-width: 375px) {
+      font-size: 2rem;
+    }
+  }
+  
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #2E2E2E,
+        0 0 80px #2E2E2E,
+        0 0 90px #2E2E2E,
+        0 0 100px #2E2E2E,
+        0 0 150px #2E2E2E;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  .container {
+    margin-top: 20vh;
+  }
+  
+   
+  
+  

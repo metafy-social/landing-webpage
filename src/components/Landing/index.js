@@ -7,6 +7,7 @@ import LKD from "../../assets/linkedin.png";
 import GH from "../../assets/github.png";
 import INS from "../../assets/instagram.png";
 import Sidebar from "../Sidebar";
+import '../Countdown/countdown.css'
 
 function Card(props) {
   const { options, ...rest } = props;
@@ -49,6 +50,8 @@ const Landing = () => {
             <div class="word3">we expand</div>
           </Message>
         </h1>
+        
+       
         {/* <Card> */}
         <div className="css-typing">
           <div className="text">
@@ -73,7 +76,9 @@ const Landing = () => {
               better place for everyone.
             </p>
           </div>
+          
         </div>
+        
         {/* </Card> */}
       </Content>
     </LandingWrapper>

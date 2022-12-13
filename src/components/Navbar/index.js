@@ -72,7 +72,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks to="/countdown">
                 <img className="eth" src={CT} alt="" />
-                Countdown
+                New Updates
               </NavLinks>
             </NavItem>
             <NavItem>
