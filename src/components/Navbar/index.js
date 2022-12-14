@@ -64,13 +64,13 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/">
+              <NavLinks to="/home">
                 <img className="eth" src={HP} alt="" />
                 Home
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/countdown">
+              <NavLinks to="/">
                 <img className="eth" src={CT} alt="" />
                 New Updates
               </NavLinks>
