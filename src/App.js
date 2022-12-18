@@ -26,8 +26,9 @@ const App = () => {
         <CookiesProvider>
           <Router>
             <Routes>
-              <Route path="/" element={<Landing />} />
-              <Route path="/countdown" element={<Countdown />} />
+              <Route path="/" element={<Countdown />} />
+              {/* <Route path="/countdown" element={<Countdown />} /> */}
+              <Route path="/home" element={<Landing />} />
               {/* <Route path="/leaderboard" element={<Leaderboard />} /> */}
               <Route path="/signup" element={<SignUp />} />
               <Route path ="/python" element={<Python />} />
