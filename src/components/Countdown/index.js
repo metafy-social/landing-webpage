@@ -122,10 +122,10 @@ const Countdown = () => {
                     </FlipCard>
                   </div>
                 </div> */}
-                <div class="container">
+                {/* <div class="container">
                   <h1 class="neonText">Something is Cooking ! </h1>
                   
-                </div>
+                </div> */}
               </Container>
             </div>
           

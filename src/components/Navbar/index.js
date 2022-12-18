@@ -64,17 +64,17 @@ const Navbar = ({ toggle }) => {
 
           {/* <MobileIcon onClick={toggle}>
             <FaBars />
-          </MobileIcon> */}
+          </MobileIcon> 
           
-            {/* <NavItem>
+           <NavItem>
               <NavLinks to="/">
                 <img className="eth" src={HP} alt="" />
                 Home
               </NavLinks>
-            </NavItem> */}
-            {/* <NavItem>
-               <NavLinks to="/countdown">
-              <NavLinks to="/home">
+            </NavItem> 
+            <NavItem> */}
+               {/* <NavLinks to="/countdown"> */}
+              {/* <NavLinks to="/home">
                 <img className="eth" src={HP} alt="" />
                 Home
               </NavLinks>
@@ -105,10 +105,10 @@ const Navbar = ({ toggle }) => {
                   </MenuItem>
                 </Select> 
               </FormControl>
-            </NavItem> */}
+            </NavItem>  */}
   
   
-          {/* <NavBtn>
+           {/* <NavBtn>
             <NavBtnLink to="/signup">Sign Up</NavBtnLink>
           </NavBtn> */}
         </NavbarContainer>
