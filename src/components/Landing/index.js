@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
-import { LandingWrapper, Content ,Head,Message, SM} from "./LandingElements";
+import { LandingWrapper, Content, Head, Message, SM } from "./LandingElements";
 import Navbar from "../Navbar";
 import VanillaTilt from "vanilla-tilt";
 import LKD from "../../assets/linkedin.png";
 import GH from "../../assets/github.png";
 import INS from "../../assets/instagram.png";
 import Sidebar from "../Sidebar";
-import '../Countdown/countdown.css'
+import "../Countdown/countdown.css";
 
 function Card(props) {
   const { options, ...rest } = props;
@@ -35,28 +35,31 @@ const Landing = () => {
       />
 
       <Content>
-        <Sidebar isOpen={isOpen} toggle={toggle}/>
-        <Navbar toggle={toggle}/>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} />
 
-        <h1>
-          <Head>
-            <h3>AT METAFY</h3>
-          </Head>
+        {/* <h1>
+                <Head>
+                  <h3>AT METAFY</h3>
+                </Head>
 
-          <Message>
-            <div class="word1">we build</div>
-            <div class="word2">we connect</div>
+                <Message>
+                  <div class="word1">we build</div>
+                  <div class="word2">we connect</div>
 
-            <div class="word3">we expand</div>
-          </Message>
-        </h1>
-        
-       
+                  <div class="word3">we expand</div>
+                </Message>
+              </h1>
+       */}
+
+        <div class="container">
+          <h1 class="neonText">Something's Cooking !!</h1>
+        </div>
         {/* <Card> */}
         <div className="css-typing">
           <div className="text">
             <p className="line">
-            <SM>
+              <SM>
                 <a href="https://github.com/metafy-social">
                   <img className="logos" src={GH} alt="logo" />
                 </a>
@@ -76,9 +79,8 @@ const Landing = () => {
               better place for everyone.
             </p>
           </div>
-          
         </div>
-        
+
         {/* </Card> */}
       </Content>
     </LandingWrapper>

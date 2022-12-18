@@ -11,6 +11,8 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
+import { Head, Message } from "../Landing/LandingElements";
+import "../Countdown/countdown.css";
 import { FaBars } from "react-icons/fa";
 import HP from "../../assets/homep.png";
 import CT from "../../assets/countdw.png";
@@ -59,28 +61,32 @@ const Navbar = ({ toggle }) => {
             <img className="logo" src={LOGO} alt="logo" />
             <div className="head"> Metafy</div>
           </NavLogo>
-          <MobileIcon onClick={toggle}>
+
+          {/* <MobileIcon onClick={toggle}>
             <FaBars />
-          </MobileIcon>
+          </MobileIcon> */}
           <NavMenu>
             <NavItem>
+           
+            </NavItem>
+            {/* <NavItem>
               <NavLinks to="/">
                 <img className="eth" src={HP} alt="" />
                 Home
               </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/countdown">
+            </NavItem> */}
+            {/* <NavItem>
+               <NavLinks to="/countdown">
                 <img className="eth" src={CT} alt="" />
                 New Updates
-              </NavLinks>
+              </NavLinks> 
             </NavItem>
             <NavItem>
               <FormControl variant="filled" sx={{ m: 1, minWidth: '16rem' }}>
-                <InputLabel sx={{color: 'white',fontFamily: 'Zen Dots',textTransform: 'uppercase', letterSpacing: '1.5px',fontSize: '1rem'}} id="demo-multiple-name-label">
+               <InputLabel sx={{color: 'white',fontFamily: 'Zen Dots',textTransform: 'uppercase', letterSpacing: '1.5px',fontSize: '1rem'}} id="demo-multiple-name-label">
                   <img className="eth" src={LD} alt="" />
                   Leaderboard
-                </InputLabel>
+                </InputLabel> 
                 <Select
                   labelId="demo-simple-select-filled-label"
                   id="demo-simple-select-filled"
@@ -93,13 +99,13 @@ const Navbar = ({ toggle }) => {
                   <MenuItem>
                     <NavLinksSub to="/web3">Web3</NavLinksSub>
                   </MenuItem>
-                </Select>
+                </Select> 
               </FormControl>
-            </NavItem>
+            </NavItem> */}
           </NavMenu>
-          <NavBtn>
+          {/* <NavBtn>
             <NavBtnLink to="/signup">Sign Up</NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>

@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const Head = styled.h3`
 font-family: "Zen Dots", cursive;
   letter-spacing: 1rem;
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 1.5rem;
   color: #fff;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
   margin-right: 22rem;
 
   h3 {
