@@ -64,22 +64,16 @@ const Navbar = ({ toggle }) => {
 
           {/* <MobileIcon onClick={toggle}>
             <FaBars />
-          </MobileIcon> 
-          
-           <NavItem>
+          </MobileIcon>  */}
+
+          {/* <NavItem>
               <NavLinks to="/">
                 <img className="eth" src={HP} alt="" />
                 Home
               </NavLinks>
-            </NavItem> 
-            <NavItem> */}
-               {/* <NavLinks to="/countdown"> */}
-              {/* <NavLinks to="/home">
-                <img className="eth" src={HP} alt="" />
-                Home
-              </NavLinks>
-            </NavItem>
-            <NavItem>
+            </NavItem>  */}
+
+          {/* <NavItem>
               <NavLinks to="/">
                 <img className="eth" src={CT} alt="" />
                 New Updates
@@ -105,10 +99,10 @@ const Navbar = ({ toggle }) => {
                   </MenuItem>
                 </Select> 
               </FormControl>
-            </NavItem>  */}
-  
-  
-           {/* <NavBtn>
+            </NavItem> 
+   */}
+
+          {/* <NavBtn>
             <NavBtnLink to="/signup">Sign Up</NavBtnLink>
           </NavBtn> */}
         </NavbarContainer>
